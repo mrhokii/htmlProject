@@ -1,0 +1,620 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green-color: #21aa58;
+    --text1-color: #3f3f3f;
+    --white-color: white;
+    --black-color: black;
+    --bg1-color: #f2f5f8;
+    --p-color: #a3a3a3;
+}
+
+@font-face {
+    font-family: "iransans";
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.eot);
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.ttf);
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.woff);
+}
+body{
+    font-family: "iransans";
+}
+/******************************************** header ******************************************/
+
+.container > header{
+    background-color: var(--white-color);
+    display: flex;
+    position: sticky;
+    top: 0;
+    right: 0;
+    justify-content: end;
+    flex-direction: row-reverse;
+    padding: 2.8% 12%;
+}
+.container > header > i.fa-bars{
+    display: none;
+}
+
+.container > header > .desktop-menu > ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px;
+
+}
+.container > header > .desktop-menu > ul li > a{
+    text-decoration: none;
+    color: var(--text1-color);
+    font-size: 16px;
+}
+/*********************************************** login *********************************************/
+.container > main > .login{
+    display: flex;
+}
+.container > main > .login > img{
+    width: 50%;
+}
+.container > main > .login > .number-login{
+    width: 50%;
+    background-color: var(--green-color);
+    text-align: center;
+}
+
+.container > main > .login > .number-login > .fa-folder{
+    display: none;
+}
+.container > main > .login > .number-login > h1{
+    color: var(--white-color);
+    font-size: 34px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+.container > main > .login > .number-login > p{
+    color: var(--white-color);
+    padding: 20px 0;
+}
+.container > main > .login > .number-login > input{
+    outline: none;
+    background-color: var(--green-color);
+    border: none;
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 10px;
+    direction: rtl;
+}
+.container > main > .login > .number-login > .link{
+    background-color: var(--white-color);
+    color: var(--green-color);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.container > main > .login > .number-login > .web{
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 1000;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.container > main > .login > .number-login > .web:hover{
+    opacity: 0.7;
+}
+.container > main > .login > .number-login > button{
+    display: none;
+}
+/******************************** download app *************************************/
+.container > main > .download-app{
+    display: flex;
+    justify-content: center;
+}
+.container > main > .download-app > div{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.container > main > .download-app > div >a{
+    text-decoration: none;
+}
+/*********************************** services **************************************/
+.container > main > .services{
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg1-color);
+}
+.container > main > .services > h1{
+    color: var(--text1-color);
+    font-size: 36px;
+    padding: 30px 0;
+}
+.container > main > .services > .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container > main > .services > .service > .row1,
+.container > main > .services > .service > .row2,
+.container > main > .services > .service > .row3,
+.container > main > .services > .service > .row4,
+.container > main > .services > .service > .row5,
+.container > main > .services > .service > .row6,
+.container > main > .services > .service > .row7{
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+}
+.container > main > .services > .service > .row1 > a,
+.container > main > .services > .service > .row2 > a,
+.container > main > .services > .service > .row3 > a,
+.container > main > .services > .service > .row4 > a,
+.container > main > .services > .service > .row5 > a,
+.container > main > .services > .service > .row6 > a,
+.container > main > .services > .service > .row7 > a{
+    display: flex;
+    justify-content: end;
+    width: 310px;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    padding: 18px 24px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.container > main > .services > .service > .row1 > a > div,
+.container > main > .services > .service > .row2 > a > div,
+.container > main > .services > .service > .row3 > a > div,
+.container > main > .services > .service > .row4 > a > div,
+.container > main > .services > .service > .row5 > a > div,
+.container > main > .services > .service > .row6 > a > div,
+.container > main > .services > .service > .row7 > a > div{
+    padding-right: 10px;
+}
+.container > main > .services > .service > .row1 > a > div > h3,
+.container > main > .services > .service > .row2 > a > div > h3,
+.container > main > .services > .service > .row3 > a > div > h3,
+.container > main > .services > .service > .row4 > a > div > h3,
+.container > main > .services > .service > .row5 > a > div > h3,
+.container > main > .services > .service > .row6 > a > div > h3,
+.container > main > .services > .service > .row7 > a > div > h3{
+   display: flex;
+   justify-content: end;
+}
+
+
+.container > main > .services > .service > .row1 > a > div > p,
+.container > main > .services > .service > .row2 > a > div > p,
+.container > main > .services > .service > .row3 > a > div > p,
+.container > main > .services > .service > .row4 > a > div > p,
+.container > main > .services > .service > .row5 > a > div > p,
+.container > main > .services > .service > .row6 > a > div > p,
+.container > main > .services > .service > .row7 > a > div > p{
+    color: var(--p-color);
+    font-size: 13px;
+    text-align: right;
+    
+}
+/********************************** slider *********************************/
+.container > main > .slider{
+    text-align: center;
+}
+.container > main > .slider > img{
+    padding: 50px 0;
+}
+/******************************** about snapp *******************************/
+.container > main > .about-snapp{
+    display: flex;
+    justify-content: end;
+    column-gap: 30px;
+}
+.container > main > .about-snapp >  .about{
+    text-align: right;
+}
+.container > main > .about-snapp >  .about > p{
+    color: var(--text1-color);
+    font-size: 16px;
+    padding-top: 20px;
+}
+.container > main > .about-snapp > .img-right {
+    width: 750px;
+    height: 450px;
+    background-image: url(../pictures/super-app.jpg);
+    background-size: cover;
+}
+/************************************* options **********************************/
+.container > main > .options > div{
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-top: -40px;
+    padding-bottom: 30px;
+}
+
+.container > main > .options > div > .right > div,
+.container > main > .options > div > .center > div,
+.container > main > .options > div > .left > div{
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    height: 190px;
+    background-color: var(--bg1-color);
+    border-radius: 16px;
+}
+
+.container > main > .options > div >.right  > p,
+.container > main > .options > div >.center > p,
+.container > main > .options > div >.left   > p{
+    text-align: right;
+    font-size: 12px;
+}
+.container > main > .options > div >.right  > h4,
+.container > main > .options > div >.center > h4,
+.container > main > .options > div >.left   > h4{
+    text-align: right;
+    padding: 10px 0;
+}
+/********************************* sign-up ***************************************/
+
+.container > main .sign-up-driver{
+    width: 100%;
+    background-color: var(--bg1-color);
+    text-align: center;
+}
+
+.container > main .sign-up-driver > h1{
+    padding: 30px 0;
+    font-size: 34px;
+    color: var(--text1-color);
+    font-weight: bolder;
+}.container > main .sign-up-driver > p{
+    font-size: 18px;
+    padding-bottom: 34px;
+}
+
+.container > main .sign-up-driver > a{
+    padding: 12px 24px;
+    background-color: #00d170;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+.container > main .sign-up-driver > .media > video {
+    width: 1000px;
+    border-radius: 10px;
+    margin: 60px 0;
+}
+/********************************** mazaya **********************************/
+.container > main > .mazaya{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg1-color);
+    padding-bottom: 30px;
+
+} 
+.container > main > .mazaya > .mazaya1{
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.container > main > .mazaya > .mazaya1 > .mazaya2,
+.container > main > .mazaya > .mazaya1 > .mazaya3,
+.container > main > .mazaya > .mazaya1 > .mazaya4,
+.container > main > .mazaya > .mazaya1 > .mazaya5{
+    display: flex;
+    width: 550px;
+    height: 250px;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--white-color);
+    border-radius: 15px;
+}
+.container > main > .mazaya > .mazaya1 > .mazaya2 > div,
+.container > main > .mazaya > .mazaya1 > .mazaya3 > div,
+.container > main > .mazaya > .mazaya1 > .mazaya4 > div,
+.container > main > .mazaya > .mazaya1 > .mazaya5 > div{
+    text-align: right;
+}
+.container > main > .mazaya > .mazaya1 > .mazaya2 > div > p,
+.container > main > .mazaya > .mazaya1 > .mazaya3 > div > p,
+.container > main > .mazaya > .mazaya1 > .mazaya4 > div > p,
+.container > main > .mazaya > .mazaya1 > .mazaya5 > div > p{
+    font-size: 14px;
+    color: #404040;
+    padding: 20px 0;
+}
+/************************************ footer ********************************************/
+.container > footer{
+    width: 100%;
+    text-align: center;
+    padding-top: 36px;
+}
+.container > footer > nav > a{
+    text-decoration: none;
+    padding: 8px;
+    color: var(--text1-color);
+}
+.container > footer > .icons > a{
+    text-decoration: none;
+}
+.container > footer > .icons > a > i{
+    padding: 36px 20px;
+    color: var(--black-color);
+    font-size: x-large;
+}
+.container > footer > .img > a{
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+
+
+/************************ responsive tab************************/
+
+@media screen and (min-width: 600px) and (max-width: 740px) {
+
+    
+/******************************************** header ******************************************/
+    .container > header > .desktop-menu{
+        display: none;
+    }
+    .container > header > a > img{
+        display: none;
+    }
+    .container > header > i.fa-bars > .mobile-menu{
+        display: none;
+    }
+    .container > header > i.fa-bars {
+        display: block;
+    }
+    .container > header > i.fa-bars:hover .mobile-menu{
+        display: block;
+        position: none;
+    }
+    
+    .container > header > i.fa-bars:hover .mobile-menu > ul li,a{
+        list-style: none;
+        text-decoration: none;
+        color: var(--text1-color);
+        padding: 10px 0;
+    }
+    /*********************************************** login *********************************************/
+    
+    .container > main > .login > img{
+        display: none;
+    }
+    .container > main > .login > .number-login{
+        width: 100%;
+    }
+    .container > main > .login > .number-login > input,
+    .container > main > .login > .number-login > a{
+        display: none;
+    }.container > main > .login > .number-login > .fa-folder > .app-m{
+        display: none;
+    }
+    .container > main > .login > .number-login > .fa-folder{
+        display: block;
+        background-color: var(--white-color);
+        height: 130px;
+        
+    }
+    .container > main > .login > .number-login > .fa-folder:hover .app-m{
+        display: block;
+    }
+    /******************************** download app *************************************/
+    .container >main > .download-app{
+        display: none;
+    }
+    /*********************************** services **************************************/
+    .container > main > .services > .service > .row1 > a > div > p,
+    .container > main > .services > .service > .row2 > a > div > p,
+    .container > main > .services > .service > .row3 > a > div > p,
+    .container > main > .services > .service > .row4 > a > div > p,
+    .container > main > .services > .service > .row5 > a > div > p,
+    .container > main > .services > .service > .row6 > a > div > p,
+    .container > main > .services > .service > .row7 > a > div > p{
+        display: none;
+    }
+    .container > main > .services > .service > .row1 > a ,
+    .container > main > .services > .service > .row2 > a ,
+    .container > main > .services > .service > .row3 > a ,
+    .container > main > .services > .service > .row4 > a ,
+    .container > main > .services > .service > .row5 > a ,
+    .container > main > .services > .service > .row6 > a ,
+    .container > main > .services > .service > .row7 > a {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .container > main > .services > .service > .row1 > a > img ,
+    .container > main > .services > .service > .row2 > a > img ,
+    .container > main > .services > .service > .row3 > a > img ,
+    .container > main > .services > .service > .row4 > a > img ,
+    .container > main > .services > .service > .row5 > a > img ,
+    .container > main > .services > .service > .row6 > a > img ,
+    .container > main > .services > .service > .row7 > a > img {
+        width: 50px;
+        height: 50px;
+    }
+    /******************************** about snapp *******************************/
+    .container > main > .about-snapp{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container > main > .about-snapp > .img-right{
+        width: 100%;
+        height: 400px;
+    }
+    /************************************* options **********************************/
+    .container > main > .options > .option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    }
+    /********************************* sign-up-driver ***************************************/
+    .container > main > .sign-up-driver > .media > video{
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+/************************ responsive mobile************************/
+
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+    /******************************************** header ******************************************/
+    .container > header > .desktop-menu{
+        display: none;
+    }
+    .container > header > a > img{
+        display: none;
+    }
+    .container > header > i.fa-bars > .mobile-menu{
+        display: none;
+    }
+    .container > header > i.fa-bars {
+        display: block;
+    }
+    .container > header > i.fa-bars:hover .mobile-menu{
+        display: block;
+        position: none;
+    }
+    
+    .container > header > i.fa-bars:hover .mobile-menu > ul li,a{
+        list-style: none;
+        text-decoration: none;
+        color: var(--text1-color);
+        padding: 10px 0;
+    }
+    /*********************************************** login *********************************************/
+    
+    .container > main > .login > img{
+        display: none;
+    }
+    .container > main > .login > .number-login{
+        width: 100%;
+    }
+    .container > main > .login > .number-login > input,
+    .container > main > .login > .number-login > a{
+        display: none;
+    }.container > main > .login > .number-login > .fa-folder > .app-m{
+        display: none;
+    }
+    .container > main > .login > .number-login > .fa-folder{
+        display: block;
+        background-color: var(--white-color);
+        height: 130px;
+        
+    }
+    .container > main > .login > .number-login > .fa-folder:hover .app-m{
+        display: block;
+    }
+    /******************************** download app *************************************/
+    .container >main > .download-app{
+        display: none;
+    }
+    /*********************************** services **************************************/
+    .container > main > .services > .service > .row1 > a > div > p,
+    .container > main > .services > .service > .row2 > a > div > p,
+    .container > main > .services > .service > .row3 > a > div > p,
+    .container > main > .services > .service > .row4 > a > div > p,
+    .container > main > .services > .service > .row5 > a > div > p,
+    .container > main > .services > .service > .row6 > a > div > p,
+    .container > main > .services > .service > .row7 > a > div > p{
+        display: none;
+    }
+    .container > main > .services > .service > .row1 > a ,
+    .container > main > .services > .service > .row2 > a ,
+    .container > main > .services > .service > .row3 > a ,
+    .container > main > .services > .service > .row4 > a ,
+    .container > main > .services > .service > .row5 > a ,
+    .container > main > .services > .service > .row6 > a ,
+    .container > main > .services > .service > .row7 > a {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .container > main > .services > .service > .row1 > a > img ,
+    .container > main > .services > .service > .row2 > a > img ,
+    .container > main > .services > .service > .row3 > a > img ,
+    .container > main > .services > .service > .row4 > a > img ,
+    .container > main > .services > .service > .row5 > a > img ,
+    .container > main > .services > .service > .row6 > a > img ,
+    .container > main > .services > .service > .row7 > a > img {
+        width: 40px;
+        height: 40px;
+    }
+    .container > main > .services > .service > .row1 > a > div > h3 ,
+    .container > main > .services > .service > .row2 > a > div > h3 ,
+    .container > main > .services > .service > .row3 > a > div > h3 ,
+    .container > main > .services > .service > .row4 > a > div > h3 ,
+    .container > main > .services > .service > .row5 > a > div > h3 ,
+    .container > main > .services > .service > .row6 > a > div > h3 ,
+    .container > main > .services > .service > .row7 > a > div > h3 {
+        font-size: 12px;
+    }
+    /********************************** slider *********************************/
+    .container > main > .slider > img{
+        width: 270px;
+        height: 200px;
+    }
+    /******************************** about snapp *******************************/
+    .container > main > .about-snapp{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container > main > .about-snapp > .img-right{
+        width: 100%;
+        height: 100px;
+    }
+    /************************************* options **********************************/
+    .container > main > .options > .option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    }
+    /********************************* sign-up-driver ***************************************/
+    .container > main > .sign-up-driver > .media > video{
+        width: 350px;
+        height: 250px;
+    }
+    /********************************** mazaya **********************************/
+    .container > main > .mazaya > .mazaya1 > .mazaya2,
+    .container > main > .mazaya > .mazaya1 > .mazaya3,
+    .container > main > .mazaya > .mazaya1 > .mazaya4,
+    .container > main > .mazaya > .mazaya1 > .mazaya5{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container > main > .mazaya > .mazaya1 > .mazaya2 > div > h3,
+    .container > main > .mazaya > .mazaya1 > .mazaya3 > div > h3,
+    .container > main > .mazaya > .mazaya1 > .mazaya4 > div > h3,
+    .container > main > .mazaya > .mazaya1 > .mazaya5 > div > h3{
+        font-size: 12px;
+    }
+    .container > main > .mazaya > .mazaya1 > .mazaya2 > div > p,
+    .container > main > .mazaya > .mazaya1 > .mazaya3 > div > p,
+    .container > main > .mazaya > .mazaya1 > .mazaya4 > div > p,
+    .container > main > .mazaya > .mazaya1 > .mazaya5 > div > p{
+        font-size: 12px;
+    }
+    /************************************ footer ********************************************/
+
+
+    .container > footer > nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
